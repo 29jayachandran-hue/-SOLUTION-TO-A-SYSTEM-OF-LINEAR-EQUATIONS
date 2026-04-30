@@ -13,17 +13,32 @@ Prepare the lists from each linear equations and assign in np.array()
 Using the np.linalg.solve(), we can find the solutions.
 ### Step 4: 
 End the program
+
 ## Program:
+
 #Program to find the solution for the given linear equations.
+
 #Developed by: A.Jayachandran
-#RegisterNumber: 25015034
+
+#RegisterNumber: 212225230112
+
+import os
+os.environ["OPENBLAS_NUM_THREADS"]="1"
+
 import numpy as np
-a=np.array([[1,3],[2,5]])
-b=np.array([5,-3])
-x=np.linalg.solve(a,b)
-print(x)
+
+matrixA=np.array([[1,3],[2,5]])
+
+const = np.array([5,-3])
+
+result=np.linalg.solve(matrixA,const)
+
+print(result)
+
 ## Output:
-<img width="1477" height="763" alt="image" src="https://github.com/user-attachments/assets/ab88ba48-042d-4850-8986-4b61697d0448" />
+<img width="890" height="837" alt="image" src="https://github.com/user-attachments/assets/0d87c96d-9e89-4657-8f63-27a47e315fc1" />
+
+
 
 ## Result: 
 Thus the solutions for the linear equations are successfully solved using python program
